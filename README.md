@@ -1,4 +1,4 @@
-"# Тестовое приложение - React Quiz App"
+"# React Quiz App"
 
 1) ReactJS
 2) React Router
