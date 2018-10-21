@@ -4,6 +4,7 @@ import {BrowserRouter} from 'react-router-dom';
 import {createStore, compose, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
+import 'react-app-polyfill/ie11';
 import * as serviceWorker from './serviceWorker';
 import rootReducer from './redux/reducers/rootReducer';
 import App from './App';

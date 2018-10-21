@@ -6,9 +6,12 @@ const StyledToggle = styled.button`
   top: 40px;
   left: 40px;
   z-index: 10;
+  width: 20px;
+  height: 20px;
   background: none;
   border: none;
-  visibility: hidden;
+  outline: none;
+  cursor: pointer;
   transition: opacity, left 0.2s ease-in;
 
   &.opened{
@@ -20,11 +23,11 @@ const StyledToggle = styled.button`
   &.closed::after{
       content: '';
       position: absolute;
+      left: 1px;
       width: 20px;
       height: 2px;
       background: #fff;
       cursor: pointer;
-      visibility: visible;
   }
   &.opened::before{
       transform: rotate(45deg);
@@ -33,12 +36,15 @@ const StyledToggle = styled.button`
       transform: rotate(-45deg);
   }
   &.closed::after{
-    top: 7px;
+    top: 16px;
     box-shadow: 0 -12px 0 0 #fff;
   }
   &:hover{
       opacity: 0.7;
   }
+  &::-moz-focus-inner {
+  border: 0;
+}
 `;
 
 const NavToggle = (props) => {
