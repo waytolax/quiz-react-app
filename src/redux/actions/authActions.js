@@ -9,9 +9,9 @@ export function auth(email, password, isLogin) {
             returnSecureToken: true
         }
 
-        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyAm8YSXovXkSjuWiuw8a42eweJcbd4nBOM'
+        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key='
         if (isLogin) {
-            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAm8YSXovXkSjuWiuw8a42eweJcbd4nBOM'
+            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key='
         }
         const res = await axios.post(url, authData)
         const data = res.data
