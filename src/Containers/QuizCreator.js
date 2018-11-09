@@ -61,7 +61,7 @@ class QuizCreator extends Component {
         formControls: createFormControls()
     }
 
-    sibmitHandler = e => {
+    submitHandler = e => {
         e.preventDefault()
     }
 
