@@ -1,4 +1,4 @@
-"# Quiz React App - приложение для создание тестов / опросов"
+"# Quiz React App - Quiz Creator"
 
 1) ReactJS
 2) React Router
