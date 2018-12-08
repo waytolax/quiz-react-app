@@ -73,7 +73,7 @@ class QuizCreator extends Component {
         const questionItem = {
             question: question.value,
             id: this.props.quiz.length + 1,
-            rightAnswerId: this.state.rightAnswerId,
+            rightAnswerId: +this.state.rightAnswerId,
             answers: [
                 {
                     text: option1.value,
