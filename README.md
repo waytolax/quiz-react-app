@@ -1,4 +1,4 @@
-"# Quiz React App - Quiz Creator"
+# Quiz React App
 
 1) ReactJS
 2) React Router
